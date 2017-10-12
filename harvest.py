@@ -73,9 +73,9 @@ def make_melon_type_lookup(melon_types):
     melons_dict = {}
 
     for melon in melon_types:
-        melons_dict[melon.code] = [melon.name, melon.first_harvest, melon.color,
-        melon.is_seedless, melon.is_bestseller]
-    print melons_dict
+        melons_dict[melon.code] = melon
+        
+    return melons_dict
 
 
 all_melons = make_melon_types()
